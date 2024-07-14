@@ -88,6 +88,7 @@ const UserAuthForm = ({type}) => {
             // console.log(user)
             // console.log("acss-token ",user.accessToken);
         }).catch(err=>{
+            console.log("ERRROR IN GOOGLE AUTH:::",err);
             toast.error("Trouble login through google")
         })
     }
